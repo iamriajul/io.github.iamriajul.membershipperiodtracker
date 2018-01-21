@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<extension key="io.github.iamriajul.membershipperiodtracker" type="module">
+  <file>membershipperiodtracker</file>
+  <name>Membership Period Tracker</name>
+  <description>This extension will keep track of membership create/renew all periods</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>Riajul Islam</author>
+    <email>kmriajulislami@gmail.com</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://github.com/iamriajul/io.github.iamriajul.membershipperiodtracker</url>
+    <url desc="Documentation">https://github.com/iamriajul/io.github.iamriajul.membershipperiodtracker/wiki</url>
+    <url desc="Support">https://iamriajul.github.io</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2018-01-20</releaseDate>
+  <version>1.0</version>
+  <develStage>alpha</develStage>
+  <compatibility>
+    <ver>4.7</ver>
+  </compatibility>
+  <comments>This is a new, undeveloped module</comments>
+  <civix>
+    <namespace>CRM/Membershipperiodtracker</namespace>
+  </civix>
+</extension>
