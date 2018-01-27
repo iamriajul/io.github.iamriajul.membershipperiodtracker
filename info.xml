@@ -10,18 +10,18 @@
   </maintainer>
   <urls>
     <url desc="Main Extension Page">https://github.com/iamriajul/io.github.iamriajul.membershipperiodtracker</url>
-    <url desc="Documentation">https://github.com/iamriajul/io.github.iamriajul.membershipperiodtracker/wiki</url>
+    <url desc="Documentation">https://github.com/iamriajul/io.github.iamriajul.membershipperiodtracker</url>
     <url desc="Support">https://iamriajul.github.io</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2018-01-20</releaseDate>
   <version>1.0</version>
-  <develStage>alpha</develStage>
+  <develStage>beta</develStage>
   <compatibility>
     <ver>4.7</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments>This is a newly developed CiviCRM's Extension.</comments>
   <civix>
-    <namespace>CRM/Membershipperiodtracker</namespace>
+    <namespace>CRM/MembershipPeriodTracker</namespace>
   </civix>
 </extension>

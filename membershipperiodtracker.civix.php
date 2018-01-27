@@ -6,10 +6,10 @@
  * The ExtensionUtil class provides small stubs for accessing resources of this
  * extension.
  */
-class CRM_Membershipperiodtracker_ExtensionUtil {
+class CRM_MembershipPeriodTracker_ExtensionUtil {
   const SHORT_NAME = "membershipperiodtracker";
   const LONG_NAME = "io.github.iamriajul.membershipperiodtracker";
-  const CLASS_PREFIX = "CRM_Membershipperiodtracker";
+  const CLASS_PREFIX = "CRM_MembershipPeriodTracker";
 
   /**
    * Translate a string using the extension's domain.
@@ -77,7 +77,7 @@ class CRM_Membershipperiodtracker_ExtensionUtil {
 
 }
 
-use CRM_Membershipperiodtracker_ExtensionUtil as E;
+use CRM_MembershipPeriodTracker_ExtensionUtil as E;
 
 /**
  * (Delegated) Implements hook_civicrm_config().
@@ -205,14 +205,14 @@ function _membershipperiodtracker_civix_civicrm_upgrade($op, CRM_Queue_Queue $qu
 }
 
 /**
- * @return CRM_Membershipperiodtracker_Upgrader
+ * @return CRM_MembershipPeriodTracker_Upgrader
  */
 function _membershipperiodtracker_civix_upgrader() {
-  if (!file_exists(__DIR__ . '/CRM/Membershipperiodtracker/Upgrader.php')) {
+  if (!file_exists(__DIR__ . '/CRM/MembershipPeriodTracker/Upgrader.php')) {
     return NULL;
   }
   else {
-    return CRM_Membershipperiodtracker_Upgrader_Base::instance();
+    return CRM_MembershipPeriodTracker_Upgrader_Base::instance();
   }
 }
 

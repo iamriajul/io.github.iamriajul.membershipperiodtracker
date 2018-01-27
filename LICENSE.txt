@@ -1,5 +1,5 @@
 Package: io.github.iamriajul.membershipperiodtracker
-Copyright (C) 2018, FIXME <FIXME>
+Copyright (C) 2018
 Licensed under the GNU Affero Public License 3.0 (below).
 
 -------------------------------------------------------------------------------

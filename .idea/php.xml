@@ -2,7 +2,7 @@
 <project version="4">
   <component name="PhpIncludePathManager">
     <include_path>
-      <path value="D:\htdocs\Development\drupal\sites\all\modules\civicrm" />
+      <path value="$USER_HOME$/civicrm-core-master" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
