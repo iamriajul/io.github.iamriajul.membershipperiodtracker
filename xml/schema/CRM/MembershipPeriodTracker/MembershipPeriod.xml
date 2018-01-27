@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/MembershipPeriodTracker</base>
+  <class>MembershipPeriod</class>
+  <name>civicrm_membership_period</name>
+  <comment>Record Membership Period</comment>
+  <add>4.4</add>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <title>Membership Period ID</title>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique Membership Period ID</comment>
+    <add>4.4</add>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+
+  <field>
+    <name>start_date</name>
+    <title>Start Date</title>
+    <type>date</type>
+    <required>true</required>
+    <comment>Membership Period start date</comment>
+    <add>4.4</add>
+  </field>
+
+
+  <field>
+    <name>end_date</name>
+    <title>End Date</title>
+    <type>date</type>
+    <required>false</required>
+    <comment>Membership Period start date</comment>
+    <add>4.4</add>
+  </field>
+
+
+  <field>
+    <name>contact_id</name>
+    <title>Contact ID</title>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>FK to Contact Entity</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>contact_id</name>
+    <table>civicrm_contact</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+
+  <field>
+    <name>membership_id</name>
+    <title>Membership ID</title>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>FK to Membership Entity</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>membership_id</name>
+    <table>civicrm_membership</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+
+  <field>
+    <name>membership_type_id</name>
+    <title>Membership Type ID</title>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>FK to Membership Type</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>membership_type_id</name>
+    <table>civicrm_membership_type</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>CASCADE</onDelete>
+  </foreignKey>
+
+
+  <field>
+    <name>contribution_id</name>
+    <title>Contribution ID</title>
+    <type>int unsigned</type>
+    <comment>FK to Contribution Entity</comment>
+    <add>4.4</add>
+  </field>
+  <foreignKey>
+    <name>contribution_id</name>
+    <table>civicrm_contribution</table>
+    <key>id</key>
+    <add>4.4</add>
+    <onDelete>SET NULL</onDelete>
+  </foreignKey>
+
+</table>

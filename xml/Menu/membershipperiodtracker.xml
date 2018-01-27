@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/contact/view/membershipperiodhistory</path>
+    <page_callback>CRM_MembershipPeriodTracker_Page_MembershipPeriodHistory</page_callback>
+    <title>MembershipPeriodHistory</title>
+    <access_arguments>access CiviCRM</access_arguments>
+    <weight>1</weight>
+  </item>
+</menu>
